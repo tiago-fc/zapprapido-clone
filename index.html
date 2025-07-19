@@ -1,0 +1,1349 @@
+<!DOCTYPE html><html dir="ltr" lang="pt-BR" prefix="og: https://ogp.me/ns#"><head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="1.2.5.1",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this.t.bind(this),this.touchStartHandler=this.i.bind(this),this.touchMoveHandler=this.o.bind(this),this.touchEndHandler=this.h.bind(this),this.clickHandler=this.u.bind(this),this.interceptedClicks=[],this.interceptedClickListeners=[],this.l(this),window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.everythingLoaded&&this.m()})),document.addEventListener("DOMContentLoaded",(()=>{this.p()})),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}k(t){document.hidden?t.t():(this.triggerEvents.forEach((e=>window.addEventListener(e,t.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler))}_(){this.triggerEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}i(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this.L(t.target,!0),this.M(t.target,"onclick","rocket-onclick"),this.C())}o(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.M(t.target,"rocket-onclick","onclick"),this.O()}h(){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}u(t){t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.M(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this.O()}D(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))}))}l(t){EventTarget.prototype.addEventListenerBase=EventTarget.prototype.addEventListener,EventTarget.prototype.addEventListener=function(e,i,o){"click"!==e||t.windowLoaded||i===t.clickHandler||t.interceptedClickListeners.push({target:this,func:i,options:o}),(this||window).addEventListenerBase(e,i,o)}}L(t,e){this.interceptedClickListeners.forEach((i=>{i.target===t&&(e?t.removeEventListener("click",i.func,i.options):t.addEventListener("click",i.func,i.options))})),t.parentNode!==document.documentElement&&this.L(t.parentNode,e)}S(){return new Promise((t=>{this.T?this.O=t:t()}))}C(){this.T=!0}O(){this.T=!1}M(t,e,i){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(i,event.target.getAttribute(e)),event.target.removeAttribute(e))}t(){this._(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this.R.bind(this)):this.R()}p(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&0!==i.indexOf("data:")){0===i.indexOf("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.j(t,"preconnect")}async R(){this.lastBreath=Date.now(),this.P(this),this.F(this),this.q(),this.A(),this.I(),await this.U(this.delayedScripts.normal),await this.U(this.delayedScripts.defer),await this.U(this.delayedScripts.async);try{await this.W(),await this.H(this),await this.J()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.S().then((()=>{this.D()})),this.N()}A(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async B(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),i.hasAttribute("src")?(i.addEventListener("load",o),i.addEventListener("error",(function(){i.setAttribute("data-rocket-status","failed"),e()})),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),n=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o),t.addEventListener("error",(function(){t.setAttribute("data-rocket-status","failed"),e()})),n?(t.removeAttribute("data-rocket-src"),t.src=n):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed"),e()}}));t.setAttribute("data-rocket-status","skipped")}async U(t){const e=t.shift();return e&&e.isConnected?(await this.B(e),this.U(t)):Promise.resolve()}I(){this.j([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}j(t,e){var i=document.createDocumentFragment();t.forEach((t=>{const o=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(o){const n=document.createElement("link");n.href=o,n.rel=e,"preconnect"!==e&&(n.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),i.appendChild(n),this.trash.push(n)}})),document.head.appendChild(i)}P(t){let e={};function i(i,o){return e[o].eventsToRewrite.indexOf(i)>=0&&!t.everythingLoaded?"rocket-"+i:i}function o(t,o){!function(t){e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(o)}function n(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o||function(){},set(n){t.everythingLoaded?o=n:e["rocket"+i]=o=n}})}o(document,"DOMContentLoaded"),o(window,"DOMContentLoaded"),o(window,"load"),o(window,"pageshow"),o(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}F(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){if(o&&o.fn&&!t.allJQueries.includes(o)){o.fn.ready=o.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(o):document.addEventListener("rocket-DOMContentLoaded",(()=>e.bind(document)(o))),o([])};const e=o.fn.on;o.fn.on=o.fn.init.prototype.on=function(){return this[0]===window&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),e.apply(this,arguments),this},t.allJQueries.push(o)}e=o}o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}async H(t){const e=document.querySelector("script[data-webpack]");e&&(await async function(){return new Promise((t=>{e.addEventListener("load",t),e.addEventListener("error",t)}))}(),await t.K(),await t.H(t))}async W(){this.domReadyFired=!0,await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}async J(){await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted}),this.windowLoaded=!0}m(){document.onreadystatechange&&document.onreadystatechange(),window.onload&&window.onload(),window.onpageshow&&window.onpageshow({persisted:this.persisted})}q(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+e);const o=document.createRange(),n=i.parentElement;let s=t.get(i);void 0===s&&(s=i.nextSibling,t.set(i,s));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),n.insertBefore(c,s)}}async G(){Date.now()-this.lastBreath>45&&(await this.K(),this.lastBreath=Date.now())}async K(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}N(){this.trash.forEach((t=>t.remove()))}static run(){const t=new RocketLazyLoadScripts;t.k(t)}}RocketLazyLoadScripts.run()})();</script>
+	
+		<title>Zapp Rápido – Desconto - Zapp Rápido</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		<!-- All in One SEO 4.8.1.1 - aioseo.com -->
+	<meta name="description" content="Acessar Adquirir Zapp Rápido Multiplique as suas vendas de forma automática com o chatbot que vende 24h por dia. Transforme o seu negócio ainda hoje com o chatbot para WhatsApp capaz de conversar com um número ilimitado de clientes ao mesmo tempo. Quero adquirir o melhor chatbot do mercado Diferencial O Zapp Rápido é o">
+	<meta name="robots" content="max-image-preview:large">
+	<link rel="canonical" href="https://zapprapido.com/desconto/">
+	<meta name="generator" content="All in One SEO (AIOSEO) 4.8.1.1">
+		<meta property="og:locale" content="pt_BR">
+		<meta property="og:site_name" content="Zapp Rápido - Crie automações em um piscar de olhos">
+		<meta property="og:type" content="article">
+		<meta property="og:title" content="Zapp Rápido – Desconto - Zapp Rápido">
+		<meta property="og:description" content="Acessar Adquirir Zapp Rápido Multiplique as suas vendas de forma automática com o chatbot que vende 24h por dia. Transforme o seu negócio ainda hoje com o chatbot para WhatsApp capaz de conversar com um número ilimitado de clientes ao mesmo tempo. Quero adquirir o melhor chatbot do mercado Diferencial O Zapp Rápido é o">
+		<meta property="og:url" content="https://zapprapido.com/desconto/">
+		<meta property="og:image" content="images/cropped-logo-circle.png">
+		<meta property="og:image:secure_url" content="images/cropped-logo-circle.png">
+		<meta property="og:image:width" content="512">
+		<meta property="og:image:height" content="512">
+		<meta property="article:published_time" content="2024-04-16T17:49:19+00:00">
+		<meta property="article:modified_time" content="2024-07-09T19:20:16+00:00">
+		<meta property="article:publisher" content="https://facebook.com/zapprapido">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@zapprapido">
+		<meta name="twitter:title" content="Zapp Rápido – Desconto - Zapp Rápido">
+		<meta name="twitter:description" content="Acessar Adquirir Zapp Rápido Multiplique as suas vendas de forma automática com o chatbot que vende 24h por dia. Transforme o seu negócio ainda hoje com o chatbot para WhatsApp capaz de conversar com um número ilimitado de clientes ao mesmo tempo. Quero adquirir o melhor chatbot do mercado Diferencial O Zapp Rápido é o">
+		<meta name="twitter:creator" content="@zapprapido">
+		<meta name="twitter:image" content="https://zapprapido.com/wp-content/uploads/2023/10/cropped-logo-circle.png">
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/zapprapido.com\/desconto\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/zapprapido.com\/#listItem","position":1,"name":"In\u00edcio","item":"https:\/\/zapprapido.com\/","nextItem":{"@type":"ListItem","@id":"https:\/\/zapprapido.com\/desconto\/#listItem","name":"Zapp R\u00e1pido - Desconto"}},{"@type":"ListItem","@id":"https:\/\/zapprapido.com\/desconto\/#listItem","position":2,"name":"Zapp R\u00e1pido - Desconto","previousItem":{"@type":"ListItem","@id":"https:\/\/zapprapido.com\/#listItem","name":"In\u00edcio"}}]},{"@type":"Organization","@id":"https:\/\/zapprapido.com\/#organization","name":"Zapp R\u00e1pido","description":"Crie automa\u00e7\u00f5es em um piscar de olhos","url":"https:\/\/zapprapido.com\/","telephone":"+5547992458581","logo":{"@type":"ImageObject","url":"https:\/\/zapprapido.com\/wp-content\/uploads\/2023\/10\/cropped-logo-circle.png","@id":"https:\/\/zapprapido.com\/desconto\/#organizationLogo","width":512,"height":512},"image":{"@id":"https:\/\/zapprapido.com\/desconto\/#organizationLogo"},"sameAs":["https:\/\/facebook.com\/zapprapido","https:\/\/x.com\/zapprapido","https:\/\/instagram.com\/zapprapido","https:\/\/tiktok.com\/@zapprapido","https:\/\/pinterest.com\/zapprapido","https:\/\/youtube.com\/zapprapido","https:\/\/linkedin.com\/in\/zapprapido","https:\/\/tumblr.com\/zapprapido","https:\/\/yelp.com\/biz\/zapprapido","https:\/\/soundcloud.com\/zapprapido","https:\/\/en.wikipedia.org\/wiki\/zapprapido","https:\/\/myspace.com\/zapprapido"]},{"@type":"WebPage","@id":"https:\/\/zapprapido.com\/desconto\/#webpage","url":"https:\/\/zapprapido.com\/desconto\/","name":"Zapp R\u00e1pido \u2013 Desconto - Zapp R\u00e1pido","description":"Acessar Adquirir Zapp R\u00e1pido Multiplique as suas vendas de forma autom\u00e1tica com o chatbot que vende 24h por dia. Transforme o seu neg\u00f3cio ainda hoje com o chatbot para WhatsApp capaz de conversar com um n\u00famero ilimitado de clientes ao mesmo tempo. Quero adquirir o melhor chatbot do mercado Diferencial O Zapp R\u00e1pido \u00e9 o","inLanguage":"pt-BR","isPartOf":{"@id":"https:\/\/zapprapido.com\/#website"},"breadcrumb":{"@id":"https:\/\/zapprapido.com\/desconto\/#breadcrumblist"},"datePublished":"2024-04-16T17:49:19+00:00","dateModified":"2024-07-09T19:20:16+00:00"},{"@type":"WebSite","@id":"https:\/\/zapprapido.com\/#website","url":"https:\/\/zapprapido.com\/","name":"Zapp R\u00e1pido","description":"Crie automa\u00e7\u00f5es em um piscar de olhos","inLanguage":"pt-BR","publisher":{"@id":"https:\/\/zapprapido.com\/#organization"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+<link rel="alternate" type="application/rss+xml" title="Feed para Zapp Rápido �" href="https://zapprapido.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Feed de comentários para Zapp Rápido �" href="https://zapprapido.com/comments/feed/">
+<script type="rocketlazyloadscript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/zapprapido.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.2"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 800px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 24px; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 24px;}:root :where(.is-layout-grid){gap: 24px;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="hello-elementor-css" href="css/style.min.css" media="all">
+<link rel="stylesheet" id="hello-elementor-theme-style-css" href="css/theme.min.css" media="all">
+<link rel="stylesheet" id="hello-elementor-header-footer-css" href="css/header-footer.min.css" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="css/custom-frontend.min.css" media="all">
+<link rel="stylesheet" id="elementor-post-6-css" href="css/post-6.css" media="all">
+<link data-minify="1" rel="stylesheet" id="elementor-icons-css" href="css/elementor-icons.min.css" media="all">
+<link rel="stylesheet" id="widget-image-css" href="css/widget-image.min.css" media="all">
+<link rel="stylesheet" id="widget-nav-menu-css" href="css/custom-pro-widget-nav-menu.min.css" media="all">
+<link rel="stylesheet" id="e-sticky-css" href="css/sticky.min.css" media="all">
+<link rel="stylesheet" id="widget-heading-css" href="css/widget-heading.min.css" media="all">
+<link rel="stylesheet" id="widget-lottie-css" href="css/widget-lottie.min.css" media="all">
+<link rel="stylesheet" id="widget-icon-box-css" href="css/custom-widget-icon-box.min.css" media="all">
+<link rel="stylesheet" id="widget-video-css" href="css/widget-video.min.css" media="all">
+<link rel="stylesheet" id="e-animation-fadeIn-css" href="css/fadeIn.min.css" media="all">
+<link rel="stylesheet" id="e-motion-fx-css" href="css/motion-fx.min.css" media="all">
+<link rel="stylesheet" id="widget-counter-css" href="css/widget-counter.min.css" media="all">
+<link rel="stylesheet" id="widget-image-box-css" href="css/custom-widget-image-box.min.css" media="all">
+<link rel="stylesheet" id="widget-icon-list-css" href="css/custom-widget-icon-list.min.css" media="all">
+<link rel="stylesheet" id="widget-toggle-css" href="css/custom-widget-toggle.min.css" media="all">
+<link rel="stylesheet" id="widget-form-css" href="css/widget-form.min.css" media="all">
+<link rel="stylesheet" id="widget-social-icons-css" href="css/widget-social-icons.min.css" media="all">
+<link rel="stylesheet" id="e-apple-webkit-css" href="css/custom-apple-webkit.min.css" media="all">
+<link rel="stylesheet" id="elementor-post-880-css" href="css/post-880.css" media="all">
+<style id="rocket-lazyload-inline-css">
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:var(--wpr-bg-f907bc1b-1c8a-41e5-b452-00049a5b5376) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}.wp-embed-responsive .wp-has-aspect-ratio .rll-youtube-player{position:absolute;padding-bottom:0;width:100%;height:100%;top:0;bottom:0;left:0;right:0}
+</style>
+<link data-minify="1" rel="stylesheet" id="elementor-gf-local-inter-css" href="css/inter.css" media="all">
+<link data-minify="1" rel="stylesheet" id="elementor-gf-local-sora-css" href="css/sora.css" media="all">
+<link data-minify="1" rel="stylesheet" id="elementor-gf-local-montserrat-css" href="css/montserrat.css" media="all">
+<link rel="stylesheet" id="elementor-icons-shared-0-css" href="css/fontawesome.min.css" media="all">
+<link data-minify="1" rel="stylesheet" id="elementor-icons-fa-solid-css" href="css/solid.min.css" media="all">
+<link data-minify="1" rel="stylesheet" id="elementor-icons-fa-regular-css" href="css/regular.min.css" media="all">
+<link data-minify="1" rel="stylesheet" id="elementor-icons-fa-brands-css" href="css/brands.min.css" media="all">
+<script type="rocketlazyloadscript" data-rocket-src="https://zapprapido.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://zapprapido.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://zapprapido.com/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://zapprapido.com/wp-json/wp/v2/pages/880"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://zapprapido.com/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.8.2">
+<link rel="shortlink" href="https://zapprapido.com/?p=880">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://zapprapido.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fzapprapido.com%2Fdesconto%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://zapprapido.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fzapprapido.com%2Fdesconto%2F&format=xml">
+<meta name="facebook-domain-verification" content="spzuzm52vzqn5rwrqzzmv92n2rohyx">
+<meta name="generator" content="Elementor 3.28.4; features: additional_custom_breakpoints, e_local_google_fonts; settings: css_print_method-external, google_font-enabled, font_display-swap">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="images/cropped-logo-circle-32x32.png" sizes="32x32">
+<link rel="icon" href="images/cropped-logo-circle-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="images/cropped-logo-circle-180x180.png">
+<meta name="msapplication-TileImage" content="https://zapprapido.com/wp-content/uploads/2023/10/cropped-logo-circle-270x270.png">
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><style id="wpr-lazyload-bg-container"></style><style id="wpr-lazyload-bg-exclusion"></style>
+<noscript>
+<style id="wpr-lazyload-bg-nostyle">.elementor-880 .elementor-element.elementor-element-448dba6::before, .elementor-880 .elementor-element.elementor-element-448dba6 > .elementor-background-video-container::before, .elementor-880 .elementor-element.elementor-element-448dba6 > .e-con-inner > .elementor-background-video-container::before, .elementor-880 .elementor-element.elementor-element-448dba6 > .elementor-background-slideshow::before, .elementor-880 .elementor-element.elementor-element-448dba6 > .e-con-inner > .elementor-background-slideshow::before, .elementor-880 .elementor-element.elementor-element-448dba6 > .elementor-motion-effects-container > .elementor-motion-effects-layer::before{--wpr-bg-0cb63b42-adc6-488e-8ad0-e7dd1c032284: url('https://zapprapido.com/wp-content/uploads/2024/03/BG-01.png');}.elementor-880 .elementor-element.elementor-element-b19bf88:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-b19bf88 > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-e9d38a23-c4b4-40fe-bf37-98128a2d99ab: url('https://zapprapido.com/wp-content/uploads/2024/03/BG-02.png');}.elementor-880 .elementor-element.elementor-element-1fabb5b:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-1fabb5b > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-dd1e6b3c-96f9-4613-81d1-25108b5d09eb: url('https://zapprapido.com/wp-content/uploads/2024/04/Frame-26.png');}.elementor-880 .elementor-element.elementor-element-d130082:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-d130082 > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-4334a146-df37-4644-a5cc-96c222c473ac: url('https://zapprapido.com/wp-content/uploads/2024/04/Frame-26.png');}.elementor-880 .elementor-element.elementor-element-2c4ca02:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-2c4ca02 > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-60173c81-19ca-434c-b701-cedfb598b8f3: url('https://zapprapido.com/wp-content/uploads/2024/04/Frame-26.png');}.elementor-880 .elementor-element.elementor-element-3f3057a:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-3f3057a > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-21575ab1-b26c-4430-a1e6-98b8ded16359: url('https://zapprapido.com/wp-content/uploads/2024/04/Frame-26.png');}.elementor-880 .elementor-element.elementor-element-6f9ebe7:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-6f9ebe7 > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-1653c829-1da1-4291-897b-a2364e408ad2: url('https://zapprapido.com/wp-content/uploads/2024/04/Frame-26.png');}.elementor-880 .elementor-element.elementor-element-8db7f9f:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-8db7f9f > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-f532e37e-dd2f-4fe7-82a8-546feef2da85: url('https://zapprapido.com/wp-content/uploads/2024/04/Frame-28.png');}.elementor-880 .elementor-element.elementor-element-1a5bf5e:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-1a5bf5e > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-683025df-8364-4aff-b088-dda2ae8f36ef: url('https://zapprapido.com/wp-content/uploads/2024/04/Frame-29.png');}.elementor-880 .elementor-element.elementor-element-1a5bf5e:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-1a5bf5e > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-f5126a90-2c40-4384-8b8a-e1c7784ca4de: url('https://zapprapido.com/wp-content/uploads/2024/04/iPhone-14-15-Pro-Max-1-3.png');}.rll-youtube-player .play{--wpr-bg-f907bc1b-1c8a-41e5-b452-00049a5b5376: url('https://zapprapido.com/wp-content/plugins/wp-rocket/assets/img/youtube.png');}</style>
+</noscript>
+<script type="application/javascript">const rocket_pairs = [{"selector":".elementor-880 .elementor-element.elementor-element-448dba6, .elementor-880 .elementor-element.elementor-element-448dba6 > .elementor-background-video-container, .elementor-880 .elementor-element.elementor-element-448dba6 > .e-con-inner > .elementor-background-video-container, .elementor-880 .elementor-element.elementor-element-448dba6 > .elementor-background-slideshow, .elementor-880 .elementor-element.elementor-element-448dba6 > .e-con-inner > .elementor-background-slideshow, .elementor-880 .elementor-element.elementor-element-448dba6 > .elementor-motion-effects-container > .elementor-motion-effects-layer","style":".elementor-880 .elementor-element.elementor-element-448dba6::before, .elementor-880 .elementor-element.elementor-element-448dba6 > .elementor-background-video-container::before, .elementor-880 .elementor-element.elementor-element-448dba6 > .e-con-inner > .elementor-background-video-container::before, .elementor-880 .elementor-element.elementor-element-448dba6 > .elementor-background-slideshow::before, .elementor-880 .elementor-element.elementor-element-448dba6 > .e-con-inner > .elementor-background-slideshow::before, .elementor-880 .elementor-element.elementor-element-448dba6 > .elementor-motion-effects-container > .elementor-motion-effects-layer::before{--wpr-bg-0cb63b42-adc6-488e-8ad0-e7dd1c032284: url('https:\/\/zapprapido.com\/wp-content\/uploads\/2024\/03\/BG-01.png');}","hash":"0cb63b42-adc6-488e-8ad0-e7dd1c032284","url":"https:\/\/zapprapido.com\/wp-content\/uploads\/2024\/03\/BG-01.png"},{"selector":".elementor-880 .elementor-element.elementor-element-b19bf88:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-b19bf88 > .elementor-motion-effects-container > .elementor-motion-effects-layer","style":".elementor-880 .elementor-element.elementor-element-b19bf88:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-b19bf88 > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-e9d38a23-c4b4-40fe-bf37-98128a2d99ab: url('https:\/\/zapprapido.com\/wp-content\/uploads\/2024\/03\/BG-02.png');}","hash":"e9d38a23-c4b4-40fe-bf37-98128a2d99ab","url":"https:\/\/zapprapido.com\/wp-content\/uploads\/2024\/03\/BG-02.png"},{"selector":".elementor-880 .elementor-element.elementor-element-1fabb5b:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-1fabb5b > .elementor-motion-effects-container > .elementor-motion-effects-layer","style":".elementor-880 .elementor-element.elementor-element-1fabb5b:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-1fabb5b > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-dd1e6b3c-96f9-4613-81d1-25108b5d09eb: url('https:\/\/zapprapido.com\/wp-content\/uploads\/2024\/04\/Frame-26.png');}","hash":"dd1e6b3c-96f9-4613-81d1-25108b5d09eb","url":"https:\/\/zapprapido.com\/wp-content\/uploads\/2024\/04\/Frame-26.png"},{"selector":".elementor-880 .elementor-element.elementor-element-d130082:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-d130082 > .elementor-motion-effects-container > .elementor-motion-effects-layer","style":".elementor-880 .elementor-element.elementor-element-d130082:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-d130082 > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-4334a146-df37-4644-a5cc-96c222c473ac: url('https:\/\/zapprapido.com\/wp-content\/uploads\/2024\/04\/Frame-26.png');}","hash":"4334a146-df37-4644-a5cc-96c222c473ac","url":"https:\/\/zapprapido.com\/wp-content\/uploads\/2024\/04\/Frame-26.png"},{"selector":".elementor-880 .elementor-element.elementor-element-2c4ca02:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-2c4ca02 > .elementor-motion-effects-container > .elementor-motion-effects-layer","style":".elementor-880 .elementor-element.elementor-element-2c4ca02:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-2c4ca02 > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-60173c81-19ca-434c-b701-cedfb598b8f3: url('https:\/\/zapprapido.com\/wp-content\/uploads\/2024\/04\/Frame-26.png');}","hash":"60173c81-19ca-434c-b701-cedfb598b8f3","url":"https:\/\/zapprapido.com\/wp-content\/uploads\/2024\/04\/Frame-26.png"},{"selector":".elementor-880 .elementor-element.elementor-element-3f3057a:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-3f3057a > .elementor-motion-effects-container > .elementor-motion-effects-layer","style":".elementor-880 .elementor-element.elementor-element-3f3057a:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-3f3057a > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-21575ab1-b26c-4430-a1e6-98b8ded16359: url('https:\/\/zapprapido.com\/wp-content\/uploads\/2024\/04\/Frame-26.png');}","hash":"21575ab1-b26c-4430-a1e6-98b8ded16359","url":"https:\/\/zapprapido.com\/wp-content\/uploads\/2024\/04\/Frame-26.png"},{"selector":".elementor-880 .elementor-element.elementor-element-6f9ebe7:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-6f9ebe7 > .elementor-motion-effects-container > .elementor-motion-effects-layer","style":".elementor-880 .elementor-element.elementor-element-6f9ebe7:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-6f9ebe7 > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-1653c829-1da1-4291-897b-a2364e408ad2: url('https:\/\/zapprapido.com\/wp-content\/uploads\/2024\/04\/Frame-26.png');}","hash":"1653c829-1da1-4291-897b-a2364e408ad2","url":"https:\/\/zapprapido.com\/wp-content\/uploads\/2024\/04\/Frame-26.png"},{"selector":".elementor-880 .elementor-element.elementor-element-8db7f9f:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-8db7f9f > .elementor-motion-effects-container > .elementor-motion-effects-layer","style":".elementor-880 .elementor-element.elementor-element-8db7f9f:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-8db7f9f > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-f532e37e-dd2f-4fe7-82a8-546feef2da85: url('https:\/\/zapprapido.com\/wp-content\/uploads\/2024\/04\/Frame-28.png');}","hash":"f532e37e-dd2f-4fe7-82a8-546feef2da85","url":"https:\/\/zapprapido.com\/wp-content\/uploads\/2024\/04\/Frame-28.png"},{"selector":".elementor-880 .elementor-element.elementor-element-1a5bf5e:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-1a5bf5e > .elementor-motion-effects-container > .elementor-motion-effects-layer","style":".elementor-880 .elementor-element.elementor-element-1a5bf5e:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-1a5bf5e > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-683025df-8364-4aff-b088-dda2ae8f36ef: url('https:\/\/zapprapido.com\/wp-content\/uploads\/2024\/04\/Frame-29.png');}","hash":"683025df-8364-4aff-b088-dda2ae8f36ef","url":"https:\/\/zapprapido.com\/wp-content\/uploads\/2024\/04\/Frame-29.png"},{"selector":".elementor-880 .elementor-element.elementor-element-1a5bf5e:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-1a5bf5e > .elementor-motion-effects-container > .elementor-motion-effects-layer","style":".elementor-880 .elementor-element.elementor-element-1a5bf5e:not(.elementor-motion-effects-element-type-background), .elementor-880 .elementor-element.elementor-element-1a5bf5e > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-f5126a90-2c40-4384-8b8a-e1c7784ca4de: url('https:\/\/zapprapido.com\/wp-content\/uploads\/2024\/04\/iPhone-14-15-Pro-Max-1-3.png');}","hash":"f5126a90-2c40-4384-8b8a-e1c7784ca4de","url":"https:\/\/zapprapido.com\/wp-content\/uploads\/2024\/04\/iPhone-14-15-Pro-Max-1-3.png"},{"selector":".rll-youtube-player .play","style":".rll-youtube-player .play{--wpr-bg-f907bc1b-1c8a-41e5-b452-00049a5b5376: url('https:\/\/zapprapido.com\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png');}","hash":"f907bc1b-1c8a-41e5-b452-00049a5b5376","url":"https:\/\/zapprapido.com\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png"}]; const rocket_excluded_pairs = [];</script></head>
+<body class="wp-singular page-template page-template-elementor_canvas page page-id-880 wp-embed-responsive wp-theme-hello-elementor theme-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-880">
+			<div data-elementor-type="wp-page" data-elementor-id="880" class="elementor elementor-880" data-elementor-post-type="page">
+				<div class="elementor-element elementor-element-7942708 e-flex e-con-boxed e-con e-parent" data-id="7942708" data-element_type="container" data-settings="{" background_background":"classic","sticky":"top","sticky_on":["widescreen","desktop","laptop","tablet"],"sticky_offset":0,"sticky_effects_offset":0,"sticky_anchor_link_offset":0}"="">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-e733848 elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="e733848" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img fetchpriority="high" decoding="async" width="1904" height="464" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201904%20464'%3E%3C/svg%3E" class="attachment-full size-full wp-image-428" alt="" data-lazy-srcset="https://zapprapido.com/wp-content/uploads/2024/03/image-1.png 1904w, https://zapprapido.com/wp-content/uploads/2024/03/image-1-300x73.png 300w, https://zapprapido.com/wp-content/uploads/2024/03/image-1-1024x250.png 1024w, https://zapprapido.com/wp-content/uploads/2024/03/image-1-768x187.png 768w, https://zapprapido.com/wp-content/uploads/2024/03/image-1-1536x374.png 1536w" data-lazy-sizes="(max-width: 1904px) 100vw, 1904px" data-lazy-src="https://zapprapido.com/wp-content/uploads/2024/03/image-1.png"><noscript><img fetchpriority="high" decoding="async" width="1904" height="464" src="https://zapprapido.com/wp-content/uploads/2024/03/image-1.png" class="attachment-full size-full wp-image-428" alt="" srcset="https://zapprapido.com/wp-content/uploads/2024/03/image-1.png 1904w, https://zapprapido.com/wp-content/uploads/2024/03/image-1-300x73.png 300w, https://zapprapido.com/wp-content/uploads/2024/03/image-1-1024x250.png 1024w, https://zapprapido.com/wp-content/uploads/2024/03/image-1-768x187.png 768w, https://zapprapido.com/wp-content/uploads/2024/03/image-1-1536x374.png 1536w" sizes="(max-width: 1904px) 100vw, 1904px" /></noscript>															</div>
+				</div>
+				<div class="elementor-element elementor-element-d6f3076 elementor-hidden-mobile elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="d6f3076" data-element_type="widget" data-settings="{" layout":"horizontal","submenu_icon":{"value":"<i="" fa-caret-down\"=""><\/i>","library":"fa-solid"},"toggle":"burger"}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+								<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade">
+				<ul id="menu-1-d6f3076" class="elementor-nav-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-606"><a href="#inicio" class="elementor-item elementor-item-anchor">Início</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-607"><a href="#diferencial" class="elementor-item elementor-item-anchor">Diferencial</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-608"><a href="#depoimentos" class="elementor-item elementor-item-anchor">Depoimentos</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-609"><a href="#oferta" class="elementor-item elementor-item-anchor">Planos</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Alternar menu" aria-expanded="false">
+			<i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open eicon-menu-bar"></i><i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close eicon-close"></i>		</div>
+					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-d6f3076" class="elementor-nav-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-606"><a href="#inicio" class="elementor-item elementor-item-anchor" tabindex="-1">Início</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-607"><a href="#diferencial" class="elementor-item elementor-item-anchor" tabindex="-1">Diferencial</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-608"><a href="#depoimentos" class="elementor-item elementor-item-anchor" tabindex="-1">Depoimentos</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-609"><a href="#oferta" class="elementor-item elementor-item-anchor" tabindex="-1">Planos</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-3f2f526 e-con-full e-flex e-con e-child" data-id="3f2f526" data-element_type="container">
+				<div class="elementor-element elementor-element-54b3532 elementor-widget elementor-widget-button" data-id="54b3532" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://painel.zapprapido.com/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Acessar</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-4d5aa86 elementor-widget elementor-widget-button" data-id="4d5aa86" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="#oferta">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Adquirir</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-448dba6 e-flex e-con-boxed e-con e-parent" data-id="448dba6" data-element_type="container" id="inicio" data-settings="{" background_background":"classic"}"="">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-c565a29 e-con-full e-flex e-con e-child" data-id="c565a29" data-element_type="container">
+				<div class="elementor-element elementor-element-07f9524 elementor-widget elementor-widget-heading" data-id="07f9524" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Zapp Rápido</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-9f01a5a elementor-widget elementor-widget-heading" data-id="9f01a5a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Multiplique as suas vendas de forma automática com o chatbot que vende 24h por dia.</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-acd1564 elementor-widget__width-initial elementor-fixed elementor-align-center elementor-widget elementor-widget-lottie" data-id="acd1564" data-element_type="widget" data-settings="{" source_json":{"url":"https:\="" \="" zapprapido.com\="" wp-content\="" uploads\="" 2024\="" 07\="" animation-1720423354168.json","id":1750,"size":"","alt":"","source":"library"},"link_to":"custom","custom_link":{"url":"https:\="" api.whatsapp.com\="" send?phone="5547999961649","is_external":"","nofollow":"","custom_attributes":""},"loop":"yes","start_point":{"unit":"%","size":23,"sizes":[]},"_position":"fixed","source":"media_file","caption_source":"none","trigger":"arriving_to_viewport","viewport":{"unit":"%","size":"","sizes":{"start":0,"end":100}},"play_speed":{"unit":"px","size":1,"sizes":[]},"end_point":{"unit":"%","size":100,"sizes":[]},"renderer":"svg"}"" data-widget_type="lottie.default">
+				<div class="elementor-widget-container">
+					<a class="e-lottie__container__link" href="https://api.whatsapp.com/send?phone=5547999961649"><div class="e-lottie__container"><div class="e-lottie__animation"></div></div></a>				</div>
+				</div>
+				<div class="elementor-element elementor-element-a0a2d5b elementor-widget elementor-widget-heading" data-id="a0a2d5b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Transforme o seu negócio ainda hoje com o chatbot para WhatsApp capaz de conversar com um número ilimitado de clientes ao mesmo tempo.</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-912bcdd elementor-widget elementor-widget-html" data-id="912bcdd" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<!-- Meta Pixel Code -->
+<script type="rocketlazyloadscript">
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '679913677442385');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=679913677442385&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->				</div>
+				</div>
+				<div class="elementor-element elementor-element-24f32cf elementor-widget elementor-widget-button" data-id="24f32cf" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="#oferta">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Quero adquirir o melhor chatbot do mercado</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-cddd380 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image" data-id="cddd380" data-element_type="widget" data-settings="{" _position":"absolute"}"="" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="800" height="482" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20482'%3E%3C/svg%3E" class="attachment-large size-large wp-image-844" alt="" data-lazy-src="https://zapprapido.com/wp-content/uploads/2024/04/Group-21.svg"><noscript><img decoding="async" width="800" height="482" src="https://zapprapido.com/wp-content/uploads/2024/04/Group-21.svg" class="attachment-large size-large wp-image-844" alt="" /></noscript>															</div>
+				</div>
+				<div class="elementor-element elementor-element-1d7af1c elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget elementor-widget-image" data-id="1d7af1c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="600" height="886" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20600%20886'%3E%3C/svg%3E" class="attachment-full size-full wp-image-868" alt="" data-lazy-srcset="https://zapprapido.com/wp-content/uploads/2024/04/Celular-1.png 600w, https://zapprapido.com/wp-content/uploads/2024/04/Celular-1-203x300.png 203w" data-lazy-sizes="(max-width: 600px) 100vw, 600px" data-lazy-src="https://zapprapido.com/wp-content/uploads/2024/04/Celular-1.png"><noscript><img loading="lazy" decoding="async" width="600" height="886" src="https://zapprapido.com/wp-content/uploads/2024/04/Celular-1.png" class="attachment-full size-full wp-image-868" alt="" srcset="https://zapprapido.com/wp-content/uploads/2024/04/Celular-1.png 600w, https://zapprapido.com/wp-content/uploads/2024/04/Celular-1-203x300.png 203w" sizes="(max-width: 600px) 100vw, 600px" /></noscript>															</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-b19bf88 notebook e-flex e-con-boxed e-con e-parent" data-id="b19bf88" data-element_type="container" id="diferencial" data-settings="{" background_background":"classic"}"="">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-77a3cab e-con-full e-flex e-con e-child" data-id="77a3cab" data-element_type="container">
+				<div class="elementor-element elementor-element-8ffc5f8 screen elementor-widget elementor-widget-image" data-id="8ffc5f8" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="1944" height="1094" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201944%201094'%3E%3C/svg%3E" class="attachment-full size-full wp-image-1491" alt="" data-lazy-srcset="https://zapprapido.com/wp-content/uploads/2024/05/Macbook-v02.png 1944w, https://zapprapido.com/wp-content/uploads/2024/05/Macbook-v02-300x169.png 300w, https://zapprapido.com/wp-content/uploads/2024/05/Macbook-v02-1024x576.png 1024w, https://zapprapido.com/wp-content/uploads/2024/05/Macbook-v02-768x432.png 768w, https://zapprapido.com/wp-content/uploads/2024/05/Macbook-v02-1536x864.png 1536w" data-lazy-sizes="(max-width: 1944px) 100vw, 1944px" data-lazy-src="https://zapprapido.com/wp-content/uploads/2024/05/Macbook-v02.png"><noscript><img loading="lazy" decoding="async" width="1944" height="1094" src="https://zapprapido.com/wp-content/uploads/2024/05/Macbook-v02.png" class="attachment-full size-full wp-image-1491" alt="" srcset="https://zapprapido.com/wp-content/uploads/2024/05/Macbook-v02.png 1944w, https://zapprapido.com/wp-content/uploads/2024/05/Macbook-v02-300x169.png 300w, https://zapprapido.com/wp-content/uploads/2024/05/Macbook-v02-1024x576.png 1024w, https://zapprapido.com/wp-content/uploads/2024/05/Macbook-v02-768x432.png 768w, https://zapprapido.com/wp-content/uploads/2024/05/Macbook-v02-1536x864.png 1536w" sizes="(max-width: 1944px) 100vw, 1944px" /></noscript>															</div>
+				</div>
+				<div class="elementor-element elementor-element-3d76dd5 elementor-widget elementor-widget-image" data-id="3d76dd5" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="1310" height="786" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201310%20786'%3E%3C/svg%3E" class="attachment-full size-full wp-image-368" alt="" data-lazy-srcset="https://zapprapido.com/wp-content/uploads/2024/03/Base-Kawan.png 1310w, https://zapprapido.com/wp-content/uploads/2024/03/Base-Kawan-300x180.png 300w, https://zapprapido.com/wp-content/uploads/2024/03/Base-Kawan-1024x614.png 1024w, https://zapprapido.com/wp-content/uploads/2024/03/Base-Kawan-768x461.png 768w" data-lazy-sizes="(max-width: 1310px) 100vw, 1310px" data-lazy-src="https://zapprapido.com/wp-content/uploads/2024/03/Base-Kawan.png"><noscript><img loading="lazy" decoding="async" width="1310" height="786" src="https://zapprapido.com/wp-content/uploads/2024/03/Base-Kawan.png" class="attachment-full size-full wp-image-368" alt="" srcset="https://zapprapido.com/wp-content/uploads/2024/03/Base-Kawan.png 1310w, https://zapprapido.com/wp-content/uploads/2024/03/Base-Kawan-300x180.png 300w, https://zapprapido.com/wp-content/uploads/2024/03/Base-Kawan-1024x614.png 1024w, https://zapprapido.com/wp-content/uploads/2024/03/Base-Kawan-768x461.png 768w" sizes="(max-width: 1310px) 100vw, 1310px" /></noscript>															</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-c5536d1 elementor-widget elementor-widget-heading" data-id="c5536d1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Diferencial</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-4e4be5a elementor-widget elementor-widget-heading" data-id="4e4be5a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">O Zapp Rápido é o melhor chatbot do mercado, no preço mais acessível para você.</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-efd24ad elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="efd24ad" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="font-weight: 400;">Se você gasta tempo e energia vendendo por WhatsApp ou gasta dinheiro contratando vendedores que não vendem, descubra agora mesmo o que o Zapp Rápido fará por você:</span></p>								</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-2b7cd04 e-flex e-con-boxed e-con e-parent" data-id="2b7cd04" data-element_type="container" data-settings="{" background_background":"classic"}"="">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-6130f46 e-flex e-con-boxed e-con e-child" data-id="6130f46" data-element_type="container" data-settings="{" background_background":"gradient"}"="">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-3c2fb1a e-con-full e-flex e-con e-child" data-id="3c2fb1a" data-element_type="container">
+				<div class="elementor-element elementor-element-92582d0 elementor-view-stacked elementor-shape-square elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="92582d0" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<i aria-hidden="true" class="far fa-bookmark"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							Simplicidade						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Pensado para uso de quem não é profissional com tecnologia					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-a8d1320 e-con-full e-flex e-con e-child" data-id="a8d1320" data-element_type="container" data-settings="{" background_background":"classic"}"="">
+				<div class="elementor-element elementor-element-bb813b0 elementor-view-stacked elementor-shape-square elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="bb813b0" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<i aria-hidden="true" class="fas fa-bolt"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							Praticidade						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Rápido de configurar e já começar a vender.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-58d3930 e-con-full e-flex e-con e-child" data-id="58d3930" data-element_type="container">
+				<div class="elementor-element elementor-element-3f1bda6 elementor-view-stacked elementor-shape-square elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="3f1bda6" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<i aria-hidden="true" class="fas fa-comments"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							Eficiência						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Aumento exponencial de suas vendas por WhatsApp.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-2d73fe2 e-flex e-con-boxed e-con e-parent" data-id="2d73fe2" data-element_type="container" data-settings="{" background_background":"classic"}"="">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-600166a e-con-full e-flex e-con e-child" data-id="600166a" data-element_type="container">
+				<div class="elementor-element elementor-element-bc65014 elementor-view-stacked elementor-shape-square elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="bc65014" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<i aria-hidden="true" class="fab fa-whatsapp"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							Conexão						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						A inteligência artificial reconhece as necessidades do seu cliente e gera conexão para converter mais vendas, inclusive por meio de áudios gravados para simular o atendimento humano.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-5d6213b e-con-full e-flex e-con e-child" data-id="5d6213b" data-element_type="container">
+				<div class="elementor-element elementor-element-a7b06a1 elementor-view-stacked elementor-shape-square elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="a7b06a1" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<i aria-hidden="true" class="fas fa-piggy-bank"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							Custo benefício						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						O chatbot mais avançado do mercado, e com o menor preço. Você gasta menos com suporte, e recebe muito mais em troca.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-5f2d505 e-con-full e-flex e-con e-child" data-id="5f2d505" data-element_type="container">
+				<div class="elementor-element elementor-element-55fa8a8 elementor-view-stacked elementor-shape-square elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="55fa8a8" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<i aria-hidden="true" class="far fa-clock"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							Automatização 24h/dia						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						O chatbot vende de forma ininterrupta e permite você focar nas atividades que precisa fazer.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-45f80b6 e-flex e-con-boxed e-con e-parent" data-id="45f80b6" data-element_type="container" data-settings="{" background_background":"classic"}"="">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-28a4738 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="28a4738" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">O que é o Zapp Rápido</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-b8de22c elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="b8de22c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="font-weight: 400;">Se você gasta tempo e energia vendendo por WhatsApp ou gasta dinheiro contratando vendedores que não vendem, descubra agora mesmo o que o Zapp Rápido fará por você:</span></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-887328b elementor-widget__width-initial elementor-absolute elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="887328b" data-element_type="widget" data-settings="{" _position":"absolute"}"="" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="372" height="668" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20372%20668'%3E%3C/svg%3E" class="attachment-full size-full wp-image-777" alt="" data-lazy-srcset="https://zapprapido.com/wp-content/uploads/2024/04/image-3.png 372w, https://zapprapido.com/wp-content/uploads/2024/04/image-3-167x300.png 167w" data-lazy-sizes="(max-width: 372px) 100vw, 372px" data-lazy-src="https://zapprapido.com/wp-content/uploads/2024/04/image-3.png"><noscript><img loading="lazy" decoding="async" width="372" height="668" src="https://zapprapido.com/wp-content/uploads/2024/04/image-3.png" class="attachment-full size-full wp-image-777" alt="" srcset="https://zapprapido.com/wp-content/uploads/2024/04/image-3.png 372w, https://zapprapido.com/wp-content/uploads/2024/04/image-3-167x300.png 167w" sizes="(max-width: 372px) 100vw, 372px" /></noscript>															</div>
+				</div>
+				<div class="elementor-element elementor-element-ea4eea3 elementor-widget__width-initial elementor-absolute elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="ea4eea3" data-element_type="widget" data-settings="{" _position":"absolute"}"="" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="783" height="346" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20783%20346'%3E%3C/svg%3E" class="attachment-full size-full wp-image-778" alt="" data-lazy-srcset="https://zapprapido.com/wp-content/uploads/2024/04/image-2.png 783w, https://zapprapido.com/wp-content/uploads/2024/04/image-2-300x133.png 300w, https://zapprapido.com/wp-content/uploads/2024/04/image-2-768x339.png 768w" data-lazy-sizes="(max-width: 783px) 100vw, 783px" data-lazy-src="https://zapprapido.com/wp-content/uploads/2024/04/image-2.png"><noscript><img loading="lazy" decoding="async" width="783" height="346" src="https://zapprapido.com/wp-content/uploads/2024/04/image-2.png" class="attachment-full size-full wp-image-778" alt="" srcset="https://zapprapido.com/wp-content/uploads/2024/04/image-2.png 783w, https://zapprapido.com/wp-content/uploads/2024/04/image-2-300x133.png 300w, https://zapprapido.com/wp-content/uploads/2024/04/image-2-768x339.png 768w" sizes="(max-width: 783px) 100vw, 783px" /></noscript>															</div>
+				</div>
+				<div class="elementor-element elementor-element-2adc6b3 elementor-widget__width-initial elementor-widget elementor-widget-video" data-id="2adc6b3" data-element_type="widget" data-settings="{" youtube_url":"https:\="" \="" youtu.be\="" 8xn8o3mfuji","show_image_overlay":"yes","image_overlay":{"url":"","id":"","size":""},"video_type":"youtube","controls":"yes"}"="" data-widget_type="video.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-wrapper elementor-open-inline">
+			<div class="elementor-video"></div>		</div>
+						</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-f86f3d0 e-flex e-con-boxed e-con e-parent" data-id="f86f3d0" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-366bf97 elementor-widget elementor-widget-heading" data-id="366bf97" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Funcionalidades</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-701b253 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="701b253" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Confira algumas das funcionalidades que desenvolvemos para atender às suas necessidades</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-7b1d893 e-flex e-con-boxed e-con e-child" data-id="7b1d893" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-1fabb5b e-con-full e-flex e-con e-child" data-id="1fabb5b" data-element_type="container" data-settings="{" background_background":"classic"}"="">
+				<div class="elementor-element elementor-element-78d2a37 elementor-widget__width-initial elementor-invisible elementor-widget elementor-widget-image" data-id="78d2a37" data-element_type="widget" data-settings="{" motion_fx_motion_fx_scrolling":"yes","motion_fx_translatey_effect":"yes","motion_fx_translatey_speed":{"unit":"px","size":1.1,"sizes":[]},"_animation":"fadein","motion_fx_translatey_affectedrange":{"unit":"%","size":"","sizes":{"start":0,"end":100}},"motion_fx_devices":["widescreen","desktop","laptop","tablet","mobile"]}"="" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="643" height="403" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20643%20403'%3E%3C/svg%3E" class="attachment-full size-full wp-image-780" alt="" data-lazy-srcset="https://zapprapido.com/wp-content/uploads/2024/04/Funil.png 643w, https://zapprapido.com/wp-content/uploads/2024/04/Funil-300x188.png 300w" data-lazy-sizes="(max-width: 643px) 100vw, 643px" data-lazy-src="https://zapprapido.com/wp-content/uploads/2024/04/Funil.png"><noscript><img loading="lazy" decoding="async" width="643" height="403" src="https://zapprapido.com/wp-content/uploads/2024/04/Funil.png" class="attachment-full size-full wp-image-780" alt="" srcset="https://zapprapido.com/wp-content/uploads/2024/04/Funil.png 643w, https://zapprapido.com/wp-content/uploads/2024/04/Funil-300x188.png 300w" sizes="(max-width: 643px) 100vw, 643px" /></noscript>															</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-8f3b3ee elementor-view-stacked elementor-shape-square elementor-widget__width-initial elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="8f3b3ee" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<i aria-hidden="true" class="fas fa-funnel-dollar"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							Diferentes funis de venda						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Você pode construir diferentes funis, da forma que preferir! Seja com arquivos de texto, áudio, imagem, vídeo, música ou outros documentos; além de programar o tempo de espera entre mensagens; a sequência de perguntas e respostas do chatbot - a depender do direcionamento do cliente; configurar disparos manuais e muito mais.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-69a232e e-flex e-con-boxed e-con e-parent" data-id="69a232e" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-3df33b5 e-flex e-con-boxed e-con e-child" data-id="3df33b5" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-bc8ede2 elementor-view-stacked elementor-shape-square elementor-widget__width-initial elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="bc8ede2" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<i aria-hidden="true" class="fas fa-clock"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							Gestão de contatos em tempo real						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						As interações com funis registram os contatos com seus clientes, as progressões das conversas e permitem analisar em tempo real a efetividade das suas campanhas, facilitando a validação da sua estratégia.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-d130082 e-con-full e-flex e-con e-child" data-id="d130082" data-element_type="container" data-settings="{" background_background":"classic"}"="">
+				<div class="elementor-element elementor-element-0fe175f elementor-widget__width-initial elementor-invisible elementor-widget elementor-widget-image" data-id="0fe175f" data-element_type="widget" data-settings="{" motion_fx_motion_fx_scrolling":"yes","motion_fx_translatey_effect":"yes","motion_fx_translatey_speed":{"unit":"px","size":1.1,"sizes":[]},"_animation":"fadein","motion_fx_translatey_affectedrange":{"unit":"%","size":"","sizes":{"start":0,"end":100}},"motion_fx_devices":["widescreen","desktop","laptop","tablet","mobile"]}"="" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="642" height="403" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20642%20403'%3E%3C/svg%3E" class="attachment-full size-full wp-image-781" alt="" data-lazy-srcset="https://zapprapido.com/wp-content/uploads/2024/04/Contatos.png 642w, https://zapprapido.com/wp-content/uploads/2024/04/Contatos-300x188.png 300w" data-lazy-sizes="(max-width: 642px) 100vw, 642px" data-lazy-src="https://zapprapido.com/wp-content/uploads/2024/04/Contatos.png"><noscript><img loading="lazy" decoding="async" width="642" height="403" src="https://zapprapido.com/wp-content/uploads/2024/04/Contatos.png" class="attachment-full size-full wp-image-781" alt="" srcset="https://zapprapido.com/wp-content/uploads/2024/04/Contatos.png 642w, https://zapprapido.com/wp-content/uploads/2024/04/Contatos-300x188.png 300w" sizes="(max-width: 642px) 100vw, 642px" /></noscript>															</div>
+				</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-6ee4a01 e-flex e-con-boxed e-con e-parent" data-id="6ee4a01" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-f0facbf e-flex e-con-boxed e-con e-child" data-id="f0facbf" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-2c4ca02 e-con-full e-flex e-con e-child" data-id="2c4ca02" data-element_type="container" data-settings="{" background_background":"classic"}"="">
+				<div class="elementor-element elementor-element-fb1529c elementor-widget__width-initial elementor-invisible elementor-widget elementor-widget-image" data-id="fb1529c" data-element_type="widget" data-settings="{" motion_fx_motion_fx_scrolling":"yes","motion_fx_translatey_effect":"yes","motion_fx_translatey_speed":{"unit":"px","size":1.1,"sizes":[]},"_animation":"fadein","motion_fx_translatey_affectedrange":{"unit":"%","size":"","sizes":{"start":0,"end":100}},"motion_fx_devices":["widescreen","desktop","laptop","tablet","mobile"]}"="" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="643" height="403" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20643%20403'%3E%3C/svg%3E" class="attachment-full size-full wp-image-782" alt="" data-lazy-srcset="https://zapprapido.com/wp-content/uploads/2024/04/screencapture-painel-zapprapido-conexao-2024-03-31-09_19_42.png 643w, https://zapprapido.com/wp-content/uploads/2024/04/screencapture-painel-zapprapido-conexao-2024-03-31-09_19_42-300x188.png 300w" data-lazy-sizes="(max-width: 643px) 100vw, 643px" data-lazy-src="https://zapprapido.com/wp-content/uploads/2024/04/screencapture-painel-zapprapido-conexao-2024-03-31-09_19_42.png"><noscript><img loading="lazy" decoding="async" width="643" height="403" src="https://zapprapido.com/wp-content/uploads/2024/04/screencapture-painel-zapprapido-conexao-2024-03-31-09_19_42.png" class="attachment-full size-full wp-image-782" alt="" srcset="https://zapprapido.com/wp-content/uploads/2024/04/screencapture-painel-zapprapido-conexao-2024-03-31-09_19_42.png 643w, https://zapprapido.com/wp-content/uploads/2024/04/screencapture-painel-zapprapido-conexao-2024-03-31-09_19_42-300x188.png 300w" sizes="(max-width: 643px) 100vw, 643px" /></noscript>															</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-8488a43 elementor-view-stacked elementor-shape-square elementor-widget__width-initial elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="8488a43" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<i aria-hidden="true" class="fas fa-comments"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							Até quatro atendentes automáticos						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Além do número principal, você pode cadastrar até 3 números adicionais para aumentar a eficiência do atendimento e os seus resultados.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-c47c088 e-flex e-con-boxed e-con e-parent" data-id="c47c088" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-229133f e-flex e-con-boxed e-con e-child" data-id="229133f" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-3d139c4 elementor-view-stacked elementor-shape-square elementor-widget__width-initial elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="3d139c4" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<i aria-hidden="true" class="far fa-calendar-alt"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							Programação de campanhas						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Explore as infinitas combinações dos seus funis de venda com diferentes gatilhos de ação, para ampliar as possibilidades de interação e o engajamento dos clientes.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-3f3057a e-con-full e-flex e-con e-child" data-id="3f3057a" data-element_type="container" data-settings="{" background_background":"classic"}"="">
+				<div class="elementor-element elementor-element-fac3cae elementor-widget__width-initial elementor-invisible elementor-widget elementor-widget-image" data-id="fac3cae" data-element_type="widget" data-settings="{" motion_fx_motion_fx_scrolling":"yes","motion_fx_translatey_effect":"yes","motion_fx_translatey_speed":{"unit":"px","size":1.1,"sizes":[]},"_animation":"fadein","motion_fx_translatey_affectedrange":{"unit":"%","size":"","sizes":{"start":0,"end":100}},"motion_fx_devices":["widescreen","desktop","laptop","tablet","mobile"]}"="" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="643" height="403" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20643%20403'%3E%3C/svg%3E" class="attachment-full size-full wp-image-719" alt="" data-lazy-srcset="https://zapprapido.com/wp-content/uploads/2024/04/screencapture-painel-zapprapido-campanhas-2024-04-02-02_48_48.png 643w, https://zapprapido.com/wp-content/uploads/2024/04/screencapture-painel-zapprapido-campanhas-2024-04-02-02_48_48-300x188.png 300w" data-lazy-sizes="(max-width: 643px) 100vw, 643px" data-lazy-src="https://zapprapido.com/wp-content/uploads/2024/04/screencapture-painel-zapprapido-campanhas-2024-04-02-02_48_48.png"><noscript><img loading="lazy" decoding="async" width="643" height="403" src="https://zapprapido.com/wp-content/uploads/2024/04/screencapture-painel-zapprapido-campanhas-2024-04-02-02_48_48.png" class="attachment-full size-full wp-image-719" alt="" srcset="https://zapprapido.com/wp-content/uploads/2024/04/screencapture-painel-zapprapido-campanhas-2024-04-02-02_48_48.png 643w, https://zapprapido.com/wp-content/uploads/2024/04/screencapture-painel-zapprapido-campanhas-2024-04-02-02_48_48-300x188.png 300w" sizes="(max-width: 643px) 100vw, 643px" /></noscript>															</div>
+				</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-ba1a228 e-flex e-con-boxed e-con e-parent" data-id="ba1a228" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-46dfb28 e-flex e-con-boxed e-con e-child" data-id="46dfb28" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-6f9ebe7 e-con-full e-flex e-con e-child" data-id="6f9ebe7" data-element_type="container" data-settings="{" background_background":"classic"}"="">
+				<div class="elementor-element elementor-element-ebad88f elementor-widget__width-initial elementor-invisible elementor-widget elementor-widget-image" data-id="ebad88f" data-element_type="widget" data-settings="{" motion_fx_motion_fx_scrolling":"yes","motion_fx_translatey_effect":"yes","motion_fx_translatey_speed":{"unit":"px","size":1.1,"sizes":[]},"_animation":"fadein","motion_fx_translatey_affectedrange":{"unit":"%","size":"","sizes":{"start":0,"end":100}},"motion_fx_devices":["widescreen","desktop","laptop","tablet","mobile"]}"="" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="643" height="403" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20643%20403'%3E%3C/svg%3E" class="attachment-full size-full wp-image-718" alt="" data-lazy-srcset="https://zapprapido.com/wp-content/uploads/2024/04/screencapture-zapprapido-treinamento-2024-04-02-02_48_29.png 643w, https://zapprapido.com/wp-content/uploads/2024/04/screencapture-zapprapido-treinamento-2024-04-02-02_48_29-300x188.png 300w" data-lazy-sizes="(max-width: 643px) 100vw, 643px" data-lazy-src="https://zapprapido.com/wp-content/uploads/2024/04/screencapture-zapprapido-treinamento-2024-04-02-02_48_29.png"><noscript><img loading="lazy" decoding="async" width="643" height="403" src="https://zapprapido.com/wp-content/uploads/2024/04/screencapture-zapprapido-treinamento-2024-04-02-02_48_29.png" class="attachment-full size-full wp-image-718" alt="" srcset="https://zapprapido.com/wp-content/uploads/2024/04/screencapture-zapprapido-treinamento-2024-04-02-02_48_29.png 643w, https://zapprapido.com/wp-content/uploads/2024/04/screencapture-zapprapido-treinamento-2024-04-02-02_48_29-300x188.png 300w" sizes="(max-width: 643px) 100vw, 643px" /></noscript>															</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-5325ff5 elementor-view-stacked elementor-shape-square elementor-widget__width-initial elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="5325ff5" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<i aria-hidden="true" class="fas fa-video"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							Treinamento completo para você						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Todos os detalhes técnicos, truques e estratégias possíveis com o Zapp Rápido são ensinados para você de forma rápida e descomplicada através do treinamento que elaboramos exclusivamente para tornar ainda mais fácil a evolução do seu negócio.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-7e43bd4 e-flex e-con-boxed e-con e-parent" data-id="7e43bd4" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-8db7f9f e-flex e-con-boxed e-con e-child" data-id="8db7f9f" data-element_type="container" data-settings="{" background_background":"classic"}"="">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-74d62fe elementor-widget elementor-widget-counter" data-id="74d62fe" data-element_type="widget" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-counter">
+			<div class="elementor-counter-title">Assinaturas ativas</div>			<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix"></span>
+				<span class="elementor-counter-number" data-duration="2000" data-to-value="5047" data-from-value="0" data-delimiter=".">0</span>
+				<span class="elementor-counter-number-suffix"></span>
+			</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-32c1773 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="32c1773" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="font-weight: 400;">Esse é o número dos nossos parceiros que já automatizaram as vendas em seu WhatsApp.</span></p><p><span style="font-weight: 400;">Independentemente do seu serviço ou produto, o Zapp Rápido vende por você. </span></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-88b3abc elementor-widget elementor-widget-button" data-id="88b3abc" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="#oferta">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Quero vender mais</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-2964b4f e-flex e-con-boxed e-con e-parent" data-id="2964b4f" data-element_type="container" data-settings="{" background_background":"classic"}"="">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-24b14fb elementor-widget elementor-widget-heading" data-id="24b14fb" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">O Zapp Rápido transforma os resultados dos seus funis de venda</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e57d651 elementor-widget elementor-widget-text-editor" data-id="e57d651" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="font-weight: 400;">O passo-a-passo é simples:</span></p>								</div>
+				</div>
+		<div class="elementor-element elementor-element-507f7cb e-con-full e-flex e-con e-child" data-id="507f7cb" data-element_type="container">
+		<div class="elementor-element elementor-element-f6b0d5a e-con-full e-flex e-con e-child" data-id="f6b0d5a" data-element_type="container">
+				<div class="elementor-element elementor-element-79c8527 box elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="79c8527" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Passo 01</h3><p class="elementor-image-box-description">A partir da sua captação por anúncios ou qualquer estratégia, o cliente é direcionado diretamente ao WhatsApp.</p></div></div>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-43b8648 e-con-full e-flex e-con e-child" data-id="43b8648" data-element_type="container">
+				<div class="elementor-element elementor-element-7b9c21b box elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="7b9c21b" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Passo 01</h3><p class="elementor-image-box-description">A partir da sua captação por anúncios ou qualquer estratégia, o cliente é direcionado diretamente ao WhatsApp.</p></div></div>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-6416c56 e-con-full e-flex e-con e-child" data-id="6416c56" data-element_type="container">
+				<div class="elementor-element elementor-element-85c4f44 box elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="85c4f44" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Passo 03</h3><p class="elementor-image-box-description">De forma automática, a qualquer momento do dia, o seu cliente fecha a venda diretamente pelo WhatsApp.</p></div></div>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-da625c9 e-con-full e-flex e-con e-child" data-id="da625c9" data-element_type="container">
+				<div class="elementor-element elementor-element-f27c562 box elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="f27c562" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Passo 04</h3><p class="elementor-image-box-description">E pronto. Com a venda concluída, o dinheiro cai na sua conta.</p></div></div>				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-92b388c e-flex e-con-boxed e-con e-parent" data-id="92b388c" data-element_type="container" data-settings="{" background_background":"classic"}"="">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-1a5bf5e e-flex e-con-boxed e-con e-child" data-id="1a5bf5e" data-element_type="container" data-settings="{" background_background":"classic"}"="">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-cadc215 elementor-widget elementor-widget-heading" data-id="cadc215" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Altíssima escala</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-af97167 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="af97167" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									O Zapp Rápido atende uma quantia ilimitada de clientes simultâneos, multiplicando a produtividade e os seus resultados de vendas, fechando diversos negócios ao mesmo tempo.								</div>
+				</div>
+				<div class="elementor-element elementor-element-a982e0c elementor-widget elementor-widget-button" data-id="a982e0c" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="#oferta">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Quero vender mais</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-cc07d8a e-flex e-con-boxed e-con e-parent" data-id="cc07d8a" data-element_type="container" id="depoimentos" data-settings="{" background_background":"classic"}"="">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-ad86e9b elementor-widget elementor-widget-heading" data-id="ad86e9b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">O que os nossos clientes dizem?</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-896f158 e-con-full e-flex e-con e-child" data-id="896f158" data-element_type="container">
+		<div class="elementor-element elementor-element-1193e63 e-con-full e-flex e-con e-child" data-id="1193e63" data-element_type="container">
+				<div class="elementor-element elementor-element-28feaf6 elementor-widget elementor-widget-video" data-id="28feaf6" data-element_type="widget" data-settings="{" youtube_url":"https:\="" \="" youtu.be\="" rfnngkywaag","video_type":"youtube","controls":"yes"}"="" data-widget_type="video.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-wrapper elementor-open-inline">
+			<div class="elementor-video"></div>		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-2d3dc82 e-con-full e-flex e-con e-child" data-id="2d3dc82" data-element_type="container">
+				<div class="elementor-element elementor-element-ae6cf95 elementor-widget elementor-widget-video" data-id="ae6cf95" data-element_type="widget" data-settings="{" youtube_url":"https:\="" \="" youtu.be\="" v2bxbugu1bi","video_type":"youtube","controls":"yes"}"="" data-widget_type="video.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-wrapper elementor-open-inline">
+			<div class="elementor-video"></div>		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-6af4d1d e-con-full e-flex e-con e-child" data-id="6af4d1d" data-element_type="container">
+				<div class="elementor-element elementor-element-0c26d99 elementor-widget elementor-widget-video" data-id="0c26d99" data-element_type="widget" data-settings="{" youtube_url":"https:\="" \="" youtu.be\="" wskn30k33ee","video_type":"youtube","controls":"yes"}"="" data-widget_type="video.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-wrapper elementor-open-inline">
+			<div class="elementor-video"></div>		</div>
+						</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-451a6b0 e-flex e-con-boxed e-con e-parent" data-id="451a6b0" data-element_type="container" id="oferta">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-afdd3a3 elementor-widget elementor-widget-heading" data-id="afdd3a3" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Nossos planos</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-8dace6d elementor-widget elementor-widget-text-editor" data-id="8dace6d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="font-weight: 400;">Não perca a oportunidade de multiplicar os seus resultados com uma única escolha.</span></p><p><span style="font-weight: 400;">Confira já os nossos planos e desfrute dos benefícios pelo melhor preço do mercado:</span></p>								</div>
+				</div>
+		<div class="elementor-element elementor-element-9993ef5 e-con-full e-flex e-con e-child" data-id="9993ef5" data-element_type="container">
+		<div class="elementor-element elementor-element-62fce1d e-flex e-con-boxed e-con e-child" data-id="62fce1d" data-element_type="container" data-settings="{" background_background":"classic"}"="">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-5a74994 elementor-widget elementor-widget-heading" data-id="5a74994" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">PLANO MENSAL</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-f4e69d9 elementor-widget elementor-widget-text-editor" data-id="f4e69d9" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="font-weight: 400;">Automatize seu negócio e venda de forma constante sem precisar tocar no celular, sem dificuldade, bastam alguns cliques e pronto, tudo funcionando.</span></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-e7ac389 elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="e7ac389" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-microphone-alt"></i>						</span>
+										<span class="elementor-icon-list-text">Envio de áudios como se tivessem sido gravados.​</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-comments"></i>						</span>
+										<span class="elementor-icon-list-text">Envio de mensagens de texto prontas.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-photo-video"></i>						</span>
+										<span class="elementor-icon-list-text">Envio de Imagens e Vídeos.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="far fa-file"></i>						</span>
+										<span class="elementor-icon-list-text">Envio de arquivos</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-mouse-pointer"></i>						</span>
+										<span class="elementor-icon-list-text">Instalação em poucos cliques.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-arrow-circle-up"></i>						</span>
+										<span class="elementor-icon-list-text">Atualizações automáticas.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fab fa-whatsapp"></i>						</span>
+										<span class="elementor-icon-list-text">Suporte pelo Whatsapp.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-circle-notch"></i>						</span>
+										<span class="elementor-icon-list-text">Assinatura automática.</span>
+									</li>
+						</ul>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-23aadc6 elementor-widget elementor-widget-heading" data-id="23aadc6" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">R$ 67,00<span style="font-size:14px">/Mês</span></h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-8546860 elementor-widget elementor-widget-button" data-id="8546860" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://pay.kiwify.com.br/7CHoGnr" id="https://pay.kiwify.com.br/2bJjGtx">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Quero o mensal</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-b037d25 elementor-align-left elementor-mobile-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="b037d25" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-lock"></i>						</span>
+										<span class="elementor-icon-list-text">Pagamento <strong>Seguro</strong></span>
+									</li>
+						</ul>
+						</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-02d6046 myPricing e-flex e-con-boxed e-con e-child" data-id="02d6046" data-element_type="container" data-settings="{" background_background":"gradient"}"="">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-790c846 elementor-widget elementor-widget-html" data-id="790c846" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<div class="ar-ribbon-left-box">
+    <div class="ar-elementor-ribbon-rotate">RECOMENDADO</div>
+</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-0a1e744 elementor-widget elementor-widget-heading" data-id="0a1e744" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">PLANO ANUAL</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e74e5e6 elementor-widget elementor-widget-heading" data-id="e74e5e6" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Economize 40<del>7,00</del></h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e37aae1 elementor-widget elementor-widget-text-editor" data-id="e37aae1" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Assinando o nosso plano anual, parcele em 12x no cartão e pague apenas R$ 39,86 por mês.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-d30febb elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="d30febb" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-microphone-alt"></i>						</span>
+										<span class="elementor-icon-list-text">Envio de áudios como se tivessem sido gravados.​</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-comments"></i>						</span>
+										<span class="elementor-icon-list-text">Envio de mensagens de texto prontas.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-photo-video"></i>						</span>
+										<span class="elementor-icon-list-text">Envio de Imagens e Vídeos.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="far fa-file"></i>						</span>
+										<span class="elementor-icon-list-text">Envio de arquivos</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-mouse-pointer"></i>						</span>
+										<span class="elementor-icon-list-text">Instalação em poucos cliques.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-arrow-circle-up"></i>						</span>
+										<span class="elementor-icon-list-text">Atualizações automáticas.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fab fa-whatsapp"></i>						</span>
+										<span class="elementor-icon-list-text">Suporte pelo Whatsapp.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-circle-notch"></i>						</span>
+										<span class="elementor-icon-list-text">Assinatura automática</span>
+									</li>
+						</ul>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-67d294a elementor-widget elementor-widget-heading" data-id="67d294a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">R$ 39,86<span style="font-size:14px">/Mês</span></h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-5b90049 elementor-widget elementor-widget-heading" data-id="5b90049" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Ou R$ 397,00 à vista</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-039c27f elementor-widget elementor-widget-button" data-id="039c27f" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://pay.kiwify.com.br/Dg0tVtE">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Quero o anual</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-0ffbe72 elementor-align-left elementor-mobile-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="0ffbe72" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-lock"></i>						</span>
+										<span class="elementor-icon-list-text">Pagamento <strong>Seguro</strong></span>
+									</li>
+						</ul>
+						</div>
+				</div>
+					</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-fc6ec21 e-flex e-con-boxed e-con e-parent" data-id="fc6ec21" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-5cc2685 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="5cc2685" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Perguntas Frequentes</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-2d356f3 elementor-widget__width-initial elementor-widget elementor-widget-toggle" data-id="2d356f3" data-element_type="widget" data-widget_type="toggle.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-toggle">
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-4741" class="elementor-tab-title" data-tab="1" role="button" aria-controls="elementor-tab-content-4741" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-right" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-angle-down"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-angle-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Não sou programador. Consigo utilizar o chatbot? </a>
+					</div>
+
+					<div id="elementor-tab-content-4741" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-4741"><p><span style="font-weight: 400;">Sim. Desenvolvemos a ferramenta pensando totalmente nas pessoas que não são experts em tecnologia e que conseguirão programar o chatbot sem qualquer dificuldade.</span></p></div>
+				</div>
+								</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-c33e402 elementor-widget__width-initial elementor-widget elementor-widget-toggle" data-id="c33e402" data-element_type="widget" data-widget_type="toggle.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-toggle">
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-2041" class="elementor-tab-title" data-tab="1" role="button" aria-controls="elementor-tab-content-2041" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-right" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-angle-down"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-angle-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Quantas conversas posso ter ao mesmo tempo?</a>
+					</div>
+
+					<div id="elementor-tab-content-2041" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-2041"><p><span style="font-weight: 400;">Quantas você quiser. A Bot Simples faz aquilo que um atendente humano não é capaz de fazer.</span></p></div>
+				</div>
+								</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-6fbe478 elementor-widget__width-initial elementor-widget elementor-widget-toggle" data-id="6fbe478" data-element_type="widget" data-widget_type="toggle.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-toggle">
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-1171" class="elementor-tab-title" data-tab="1" role="button" aria-controls="elementor-tab-content-1171" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-right" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-angle-down"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-angle-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Quando chega o meu acesso?</a>
+					</div>
+
+					<div id="elementor-tab-content-1171" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-1171"><p><span style="font-weight: 400;">Realizada a assinatura, você recebe instantaneamente todas as instruções e acesso ao chatbot por e-mail, sem qualquer burocracia.</span></p></div>
+				</div>
+								</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-12c7fed elementor-widget__width-initial elementor-widget elementor-widget-toggle" data-id="12c7fed" data-element_type="widget" data-widget_type="toggle.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-toggle">
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-1961" class="elementor-tab-title" data-tab="1" role="button" aria-controls="elementor-tab-content-1961" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-right" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-angle-down"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-angle-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Preciso estar conectado o tempo todo no WhatsApp para o bot operar?</a>
+					</div>
+
+					<div id="elementor-tab-content-1961" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-1961"><p><span style="font-weight: 400;">Não! Basta que seu celular esteja conectado a uma rede de internet, e o chatbot funcionará de forma automática.</span></p></div>
+				</div>
+								</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-b0fa627 elementor-widget__width-initial elementor-widget elementor-widget-toggle" data-id="b0fa627" data-element_type="widget" data-widget_type="toggle.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-toggle">
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-1851" class="elementor-tab-title" data-tab="1" role="button" aria-controls="elementor-tab-content-1851" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-right" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-angle-down"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-angle-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Como o robô funciona?</a>
+					</div>
+
+					<div id="elementor-tab-content-1851" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-1851"><p><span style="font-weight: 400;">Pensando no atendimento ideal, programa-se previamente um fluxo de conversa para guiar o cliente à compra ou a um agendamento, bastando ele responder às perguntas realizadas, sem qualquer dificuldade.</span></p></div>
+				</div>
+								</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-934f486 elementor-widget elementor-widget-button" data-id="934f486" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="#oferta">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Quero fazer parte!</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-6ec56d87 e-flex e-con-boxed e-con e-parent" data-id="6ec56d87" data-element_type="container" data-settings="{" background_background":"classic"}"="">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-23259033 e-flex e-con-boxed e-con e-child" data-id="23259033" data-element_type="container" data-settings="{" background_background":"classic"}"="">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-3e685f4 e-con-full e-flex e-con e-child" data-id="3e685f4" data-element_type="container">
+				<div class="elementor-element elementor-element-1c65e3d8 elementor-widget-tablet__width-inherit elementor-widget elementor-widget-heading" data-id="1c65e3d8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Se Inscreva</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-8bcd04d elementor-widget elementor-widget-text-editor" data-id="8bcd04d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									Para ficar por dentro de nossas novidades								</div>
+				</div>
+				<div class="elementor-element elementor-element-7d0a21c3 elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-button-align-stretch elementor-widget elementor-widget-form" data-id="7d0a21c3" data-element_type="widget" data-settings="{" button_width":"33","step_next_label":"next","step_previous_label":"previous","step_type":"number_text","step_icon_shape":"circle"}"="" data-widget_type="form.default">
+				<div class="elementor-widget-container">
+							<form class="elementor-form" method="post" name="New Form">
+			<input type="hidden" name="post_id" value="880">
+			<input type="hidden" name="form_id" value="7d0a21c3">
+			<input type="hidden" name="referer_title" value="Zapp Rápido – Desconto - Zapp Rápido">
+
+							<input type="hidden" name="queried_id" value="880">
+			
+			<div class="elementor-form-fields-wrapper elementor-labels-">
+								<div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-66 elementor-field-required">
+													<input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="Digite aqui seu E-mail" required="required">
+											</div>
+								<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-33 e-form__buttons">
+					<button class="elementor-button elementor-size-md" type="submit">
+						<span class="elementor-button-content-wrapper">
+																						<span class="elementor-button-text">Inscrever-se</span>
+													</span>
+					</button>
+				</div>
+			</div>
+		</form>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-148fa2e4 e-flex e-con-boxed e-con e-parent" data-id="148fa2e4" data-element_type="container" data-settings="{" background_background":"classic"}"="">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-306fa6ca e-con-full e-flex e-con e-child" data-id="306fa6ca" data-element_type="container">
+				<div class="elementor-element elementor-element-262c5538 elementor-widget__width-inherit elementor-widget elementor-widget-image" data-id="262c5538" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://zapprapido.com">
+							<img decoding="async" width="1269" height="309" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201269%20309'%3E%3C/svg%3E" class="attachment-full size-full wp-image-511" alt="" data-lazy-srcset="https://zapprapido.com/wp-content/uploads/2024/03/2.png 1269w, https://zapprapido.com/wp-content/uploads/2024/03/2-300x73.png 300w, https://zapprapido.com/wp-content/uploads/2024/03/2-1024x249.png 1024w, https://zapprapido.com/wp-content/uploads/2024/03/2-768x187.png 768w" data-lazy-sizes="(max-width: 1269px) 100vw, 1269px" data-lazy-src="https://zapprapido.com/wp-content/uploads/2024/03/2.png"><noscript><img loading="lazy" decoding="async" width="1269" height="309" src="https://zapprapido.com/wp-content/uploads/2024/03/2.png" class="attachment-full size-full wp-image-511" alt="" srcset="https://zapprapido.com/wp-content/uploads/2024/03/2.png 1269w, https://zapprapido.com/wp-content/uploads/2024/03/2-300x73.png 300w, https://zapprapido.com/wp-content/uploads/2024/03/2-1024x249.png 1024w, https://zapprapido.com/wp-content/uploads/2024/03/2-768x187.png 768w" sizes="(max-width: 1269px) 100vw, 1269px" /></noscript>								</a>
+															</div>
+				</div>
+		<div class="elementor-element elementor-element-56f44dc5 e-con-full e-flex e-con e-child" data-id="56f44dc5" data-element_type="container">
+				<div class="elementor-element elementor-element-2a28be09 elementor-widget elementor-widget-text-editor" data-id="2a28be09" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									Transforme o seu negócio adquirindo a automação para WhatsApp que vende 24h por dia, 7 dias por semana.								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-67c20bd e-con-full e-flex e-con e-child" data-id="67c20bd" data-element_type="container">
+		<div class="elementor-element elementor-element-71a3209 e-con-full e-flex e-con e-child" data-id="71a3209" data-element_type="container">
+				<div class="elementor-element elementor-element-3244f44 elementor-widget elementor-widget-heading" data-id="3244f44" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">© 2024 ZappRápido. Todos os direitos reservados.</h2>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-9dd635b e-con-full e-flex e-con e-child" data-id="9dd635b" data-element_type="container">
+				<div class="elementor-element elementor-element-e289429 e-grid-align-right e-grid-align-mobile-center elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="e289429" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-40e7fc8" target="_blank">
+						<span class="elementor-screen-only">Youtube</span>
+						<i class="fab fa-youtube"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-9d14816" target="_blank">
+						<span class="elementor-screen-only">Instagram</span>
+						<i class="fab fa-instagram"></i>					</a>
+				</span>
+					</div>
+						</div>
+				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-b4c9599 e-flex e-con-boxed e-con e-parent" data-id="b4c9599" data-element_type="container" data-settings="{" background_background":"classic"}"="">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-5be2995 elementor-widget elementor-widget-html" data-id="5be2995" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<!-- Rolagem suave do scroll -->
+<script type="rocketlazyloadscript" data-rocket-src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha512-HaoDYc3PGduguBWOSToNc0AWGHBi2Y432Ssp3wNIdlOzrunCtB2qq6FrhtPbo+PlbvRbyi86dr5VQx61eg/daQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>				</div>
+				</div>
+				<div class="elementor-element elementor-element-432072e elementor-widget elementor-widget-html" data-id="432072e" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<script type="rocketlazyloadscript" data-rocket-src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+
+<script type="rocketlazyloadscript">
+var controller = new ScrollMagic.Controller();
+
+var scene = new ScrollMagic.Scene({
+  triggerElement: ".notebook",
+  triggerHook: "onLeave", 
+  duration: "100%" 
+})
+.setPin(".notebook")
+.addTo(controller) 
+.on("progress", function(event) {
+  var screenElement = document.querySelector(".screen");
+  var progress = event.progress;
+
+  if (progress > 0.01) { 
+    screenElement.classList.add("noteativo");
+  } else {
+    screenElement.classList.remove("noteativo");
+  }
+  if (progress > 0.05) { 
+    screenElement.classList.add("noteativo2");
+  } else {
+    screenElement.classList.remove("noteativo2");
+  }
+  if (progress > 0.10) { 
+    screenElement.classList.add("noteativo3");
+  } else {
+    screenElement.classList.remove("noteativo3");
+  }
+  if (progress > 0.15) { 
+    screenElement.classList.add("noteativo4");
+  } else {
+    screenElement.classList.remove("noteativo4");
+  }
+  if (progress > 0.20) { 
+    screenElement.classList.add("noteativo5");
+  } else {
+    screenElement.classList.remove("noteativo5");
+  }
+  if (progress > 0.25) { 
+    screenElement.classList.add("noteativo6");
+  } else {
+    screenElement.classList.remove("noteativo6");
+  } 
+  if (progress > 0.30) { 
+    screenElement.classList.add("noteativo7");
+  } else {
+    screenElement.classList.remove("noteativo7");
+  }  
+  if (progress > 0.35) { 
+    screenElement.classList.add("noteativo8");
+  } else {
+    screenElement.classList.remove("noteativo8");
+  }  
+  if (progress > 0.40) { 
+    screenElement.classList.add("noteativo9");
+  } else {
+    screenElement.classList.remove("noteativo9");
+  } 
+});
+</script>				</div>
+				</div>
+				<div class="elementor-element elementor-element-6b72128 elementor-widget elementor-widget-html" data-id="6b72128" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<script type="rocketlazyloadscript">
+const cardsContainer = document.querySelector("#cards"); 
+const cardsContents = document.querySelectorAll(".card");
+
+cardsContainer.addEventListener("mousemove", e => { cardsContents.forEach(card => {
+const rect = card.getBoundingClientRect(), 
+x = e.clientX - rect.left,
+y = e.clientY - rect.top;
+
+card.style.setProperty("--mouse-x", `${x}px`); 
+card.style.setProperty("--mouse-y", `${y}px`);
+});
+
+});
+</script>				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/hello-elementor\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+			<script type="rocketlazyloadscript">
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<script type="rocketlazyloadscript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/zapprapido.com","onHoverDelay":"100","rateThrottle":"3"};
+</script>
+<script type="rocketlazyloadscript" id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script id="rocket_lazyload_css-js-extra">
+var rocket_lazyload_css_data = {"threshold":"300"};
+</script>
+<script id="rocket_lazyload_css-js-after">
+!function o(n,c,a){function s(t,e){if(!c[t]){if(!n[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(u)return u(t,!0);throw(r=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",r}r=c[t]={exports:{}},n[t][0].call(r.exports,function(e){return s(n[t][1][e]||e)},r,r.exports,o,n,c,a)}return c[t].exports}for(var u="function"==typeof require&&require,e=0;e<a.length;e++)s(a[e]);return s}({1:[function(e,t,r){"use strict";!function(){const r="undefined"==typeof rocket_pairs?[]:rocket_pairs,e="undefined"==typeof rocket_excluded_pairs?[]:rocket_excluded_pairs;e.map(t=>{var e=t.selector;const r=document.querySelectorAll(e);r.forEach(e=>{e.setAttribute("data-rocket-lazy-bg-".concat(t.hash),"excluded")})});const o=document.querySelector("#wpr-lazyload-bg-container");var t=rocket_lazyload_css_data.threshold||300;const n=new IntersectionObserver(e=>{e.forEach(t=>{if(t.isIntersecting){const e=r.filter(e=>t.target.matches(e.selector));e.map(t=>{var e;t&&((e=document.createElement("style")).textContent=t.style,o.insertAdjacentElement("afterend",e),t.elements.forEach(e=>{n.unobserve(e),e.setAttribute("data-rocket-lazy-bg-".concat(t.hash),"loaded")}))})}})},{rootMargin:t+"px"});function c(){0<(0<arguments.length&&void 0!==arguments[0]?arguments[0]:[]).length&&r.forEach(t=>{try{const e=document.querySelectorAll(t.selector);e.forEach(e=>{"loaded"!==e.getAttribute("data-rocket-lazy-bg-".concat(t.hash))&&"excluded"!==e.getAttribute("data-rocket-lazy-bg-".concat(t.hash))&&(n.observe(e),(t.elements||(t.elements=[])).push(e))})}catch(e){console.error(e)}})}c();const a=function(){const o=window.MutationObserver;return function(e,t){if(e&&1===e.nodeType){const r=new o(t);return r.observe(e,{attributes:!0,childList:!0,subtree:!0}),r}}}();t=document.querySelector("body"),a(t,c)}()},{}]},{},[1]);
+//# sourceMappingURL=lazyload-css.min.js.map
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://zapprapido.com/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=3.3.0" id="hello-theme-frontend-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://zapprapido.com/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.2.1" id="smartmenus-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://zapprapido.com/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.28.3" id="e-sticky-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://zapprapido.com/wp-content/plugins/elementor-pro/assets/lib/lottie/lottie.min.js?ver=5.6.6" id="lottie-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://zapprapido.com/wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.min.js?ver=0.2.1" id="jquery-numerator-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://zapprapido.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.28.3" id="elementor-pro-webpack-runtime-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://zapprapido.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.28.4" id="elementor-webpack-runtime-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://zapprapido.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.28.4" id="elementor-frontend-modules-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://zapprapido.com/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://zapprapido.com/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="rocketlazyloadscript" id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type="rocketlazyloadscript" id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/zapprapido.com\/wp-admin\/admin-ajax.php","nonce":"b17da2f9b5","urls":{"assets":"https:\/\/zapprapido.com\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/zapprapido.com\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/zapprapido.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://zapprapido.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.28.3" id="elementor-pro-frontend-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://zapprapido.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="rocketlazyloadscript" id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar","a11yCarouselPrevSlideMessage":"Slide anterior","a11yCarouselNextSlideMessage":"Pr\u00f3ximo slide","a11yCarouselFirstSlideMessage":"Este \u00e9 o primeiro slide","a11yCarouselLastSlideMessage":"Este \u00e9 o \u00faltimo slide","a11yCarouselPaginationBulletMessage":"Ir para o slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Dispositivos m\u00f3veis no modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Dispositivos m\u00f3veis no modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet no modo retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet no modo paisagem","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Notebook","value":1366,"default_value":1366,"direction":"max","is_enabled":true},"widescreen":{"label":"Tela ampla (widescreen)","value":2400,"default_value":2400,"direction":"min","is_enabled":true}},"hasCustomBreakpoints":true},"version":"3.28.4","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"container":true,"e_local_google_fonts":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"nested-elements":true,"editor_v2":true,"home_screen":true},"urls":{"assets":"https:\/\/zapprapido.com\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/zapprapido.com\/wp-admin\/admin-ajax.php","uploadUrl":"http:\/\/zapprapido.com\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"dabbfe6a49"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet","viewport_laptop","viewport_widescreen"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"title","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":880,"title":"Zapp%20R%C3%A1pido%20%E2%80%93%20Desconto%20-%20Zapp%20R%C3%A1pido","excerpt":"","featuredImage":false}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://zapprapido.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.28.4" id="elementor-frontend-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://zapprapido.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.28.3" id="pro-elements-handlers-js"></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async="" src="js/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="play Youtube video"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script>	<script>class RocketElementorAnimation{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode-wpr",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}_detectAnimations(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this._listAnimationSettingsKeys(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach(t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this._animateElement(t)}catch(t){}})}_animateElement(t){const e=JSON.parse(t.dataset.settings),i=e._animation_delay||e.animation_delay||0,n=e[this.animationSettingKeys.find(t=>e[t])];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let s=setTimeout(()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this._removeAnimationSettings(t,e)},i);window.addEventListener("rocket-startLoading",function(){clearTimeout(s)})}_listAnimationSettingsKeys(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach(t=>{e.forEach(e=>{i.push(t+e)})}),i}_removeAnimationSettings(t,e){this._listAnimationSettingsKeys().forEach(t=>delete e[t]),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorAnimation;requestAnimationFrame(t._detectAnimations.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorAnimation.run);</script>
+
+
+</body></html><!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1752935034 -->
